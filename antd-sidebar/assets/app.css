@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #666;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper__sidebar {
+  --width-sidebar: 256px;
+  width: var(--width-sidebar);
+  height: 100%;
+  transition: all 0.2s ease-in;
+}
+
+.wrapper__sidebar.isToggle {
+  --width-sidebar: 80px;
+}
+
+.wrapper__container {
+  --width-sidebar: 256px;
+  width: calc(100% - var(--width-sidebar));
+  height: 100%;
+  background-color: #eceef1;
+  transition: all 0.2s ease-in;
+}
+
+.wrapper__container.isToggle {
+  --width-sidebar: 80px;
+}
+
+.sidebar {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar__brand {
+  height: 72px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 9px -3px rgb(0 0 0 / 20%);
+  background-color: #fefefe;
+}
+
+.sidebar__menu-container {
+  height: calc(100% - 120px);
+  padding: 24px 0;
+  overflow-x: hidden;
+}
+
+.sidebar__switch-theme {
+  height: 48px;
+  width: 100%;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.brand__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand__logo img {
+  width: 36px;
+  margin-right: 8px;
+}
+
+.brand__logo h1 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #1890ff;
+  font-weight: 700;
+  margin-bottom: 0;
+  background-image: -webkit-gradient(
+    linear,
+    37.219838% 34.532506%,
+    36.425669% 93.178216%,
+    from(#29cdff),
+    to(#0a60ff),
+    color-stop(0.37, #148eff)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sidebar__switch-theme span {
+  font-size: 12px;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.sidebar__switch-theme span .icon-bulb {
+  min-width: 14px;
+  font-size: 14px;
+}
+
+.sidebar__switch-theme .switch {
+  font-size: 13px;
+  height: 22px;
+  min-width: 44px;
+  line-height: 22px;
+  display: inline-block;
+  vertical-align: middle;
+  border: 0;
+  border-radius: 100px;
+  background-color: rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  position: relative;
+}
+
+.sidebar__switch-theme .switch__handle {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+
+.sidebar__switch-theme .switch__handle:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  border-radius: 9px;
+  box-shadow: 0 2px 4px 0 rgb(0 35 11 / 20%);
+  content: "";
+}
+
+.sidebar__switch-theme .switch__inner {
+  display: block;
+  margin: 0 7px 0 25px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.scroll-container {
+  position: relative;
+  height: 100%;
+}
+
+.sidebar__menu-container a {
+  text-decoration: none;
+  color: #1890ff;
+}
+
+.menu__item,
+.menu__submenu {
+  display: flex;
+  align-items: center;
+  padding: 0 16px 0 24px;
+  height: 40px;
+  font-size: 13px;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.menu__item a,
+.menu__submenu a {
+  color: #666;
+  transition: 0.2s;
+}
+
+.wrapper__sidebar.isToggle .menu__item {
+  justify-content: center;
+  padding: 0;
+}
+
+.menu__item__icon {
+  display: flex;
+  align-items: center;
+}
+
+.menu__item__icon .ant-icon {
+  display: flex;
+  align-items: center;
+}
+
+.menu__item__icon .ant-icon + span {
+  margin-left: 10px;
+}
+
+.menu__item.active {
+  background-color: #e6f7ff;
+}
+
+.menu__item.active a {
+  color: #1890ff;
+}
+
+.wrapper__sidebar.isToggle .menu__item.active:after {
+  position: unset;
+}
+
+.menu__item.active:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-right: 2px solid #1890ff;
+  content: "";
+}
+
+.menu__item:hover a {
+  color: #1890ff;
+}
+
+.wrapper__sidebar.isToggle .menu__submenu {
+  justify-content: center;
+  padding: 0;
+}
+
+.menu__submenu .submenu-arrow {
+  position: absolute;
+  right: 16px;
+  flex: none;
+  width: 10px;
+}
+
+.wrapper__sidebar.isToggle .menu__submenu .submenu-arrow:after,
+.wrapper__sidebar.isToggle .menu__submenu .submenu-arrow:before {
+  position: unset;
+}
+
+.menu__submenu .submenu-arrow:after {
+  position: absolute;
+  width: 6px;
+  height: 1.5px;
+  background-color: currentcolor;
+  border-radius: 2px;
+  content: "";
+  transform: rotate(-45deg) translateX(2.5px);
+  transition: background 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
+    transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
+    top 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
+    color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.menu__submenu .submenu-arrow:before {
+  position: absolute;
+  width: 6px;
+  height: 1.5px;
+  background-color: currentcolor;
+  border-radius: 2px;
+  content: "";
+  transform: rotate(45deg) translateX(-2.5px);
+  transition: background 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
+    transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
+    top 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
+    color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.menu__submenu.active .submenu-arrow:after {
+  position: absolute;
+  width: 6px;
+  height: 1.5px;
+  background-color: currentcolor;
+  border-radius: 2px;
+  content: "";
+  transform: rotate(45deg) translateX(2.5px);
+}
+
+.menu__submenu.active .submenu-arrow:before {
+  position: absolute;
+  width: 6px;
+  height: 1.5px;
+  background-color: currentcolor;
+  border-radius: 2px;
+  content: "";
+  transform: rotate(-45deg) translateX(-2.5px);
+}
+
+.menu__submenu:hover,
+.menu__submenu:hover a {
+  color: #1890ff;
+}
+
+.menu__submenu_content {
+  padding: 5px 0;
+  background-color: #fafafa;
+  overflow: hidden;
+}
+
+.menu__submenu_content.hidden {
+  display: none;
+}
+
+.menu__submenu_content .menu__item {
+  padding-left: 48px;
+}
+
+.header {
+  height: 72px;
+  background-color: #fff;
+  display: flex;
+}
+
+.header__button-toggle {
+  width: 72px;
+  height: 72px;
+  line-height: 72px;
+  text-align: center;
+}
+
+.header__button-toggle span {
+  display: inline-block;
+  color: inherit;
+  font-style: normal;
+  line-height: 0;
+  text-align: center;
+  text-transform: none;
+  vertical-align: -0.125em;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

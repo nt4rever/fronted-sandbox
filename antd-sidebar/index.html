@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AntD Admin</title>
+    <link rel="stylesheet" href="./assets/app.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper__sidebar">
+            <div class="sidebar">
+                <div class="sidebar__brand">
+                    <div class="brand__logo">
+                        <img src="./assets/images/logo.svg" alt="logo">
+                        <h1>AntD Admin</h1>
+                    </div>
+                </div>
+                <div class="sidebar__menu-container">
+                    <div class="scroll-container">
+                        <ul>
+                            <li class="menu__item active">
+                                <span>
+                                    <a href="#" class="menu__item__icon">
+                                        <span class="ant-icon"><svg viewBox="64 64 896 896" focusable="false"
+                                                data-icon="dashboard" width="1em" height="1em" fill="currentColor"
+                                                aria-hidden="true">
+                                                <path
+                                                    d="M924.8 385.6a446.7 446.7 0 00-96-142.4 446.7 446.7 0 00-142.4-96C631.1 123.8 572.5 112 512 112s-119.1 11.8-174.4 35.2a446.7 446.7 0 00-142.4 96 446.7 446.7 0 00-96 142.4C75.8 440.9 64 499.5 64 560c0 132.7 58.3 257.7 159.9 343.1l1.7 1.4c5.8 4.8 13.1 7.5 20.6 7.5h531.7c7.5 0 14.8-2.7 20.6-7.5l1.7-1.4C901.7 817.7 960 692.7 960 560c0-60.5-11.9-119.1-35.2-174.4zM761.4 836H262.6A371.12 371.12 0 01140 560c0-99.4 38.7-192.8 109-263 70.3-70.3 163.7-109 263-109 99.4 0 192.8 38.7 263 109 70.3 70.3 109 163.7 109 263 0 105.6-44.5 205.5-122.6 276zM623.5 421.5a8.03 8.03 0 00-11.3 0L527.7 506c-18.7-5-39.4-.2-54.1 14.5a55.95 55.95 0 000 79.2 55.95 55.95 0 0079.2 0 55.87 55.87 0 0014.5-54.1l84.5-84.5c3.1-3.1 3.1-8.2 0-11.3l-28.3-28.3zM490 320h44c4.4 0 8-3.6 8-8v-80c0-4.4-3.6-8-8-8h-44c-4.4 0-8 3.6-8 8v80c0 4.4 3.6 8 8 8zm260 218v44c0 4.4 3.6 8 8 8h80c4.4 0 8-3.6 8-8v-44c0-4.4-3.6-8-8-8h-80c-4.4 0-8 3.6-8 8zm12.7-197.2l-31.1-31.1a8.03 8.03 0 00-11.3 0l-56.6 56.6a8.03 8.03 0 000 11.3l31.1 31.1c3.1 3.1 8.2 3.1 11.3 0l56.6-56.6c3.1-3.1 3.1-8.2 0-11.3zm-458.6-31.1a8.03 8.03 0 00-11.3 0l-31.1 31.1a8.03 8.03 0 000 11.3l56.6 56.6c3.1 3.1 8.2 3.1 11.3 0l31.1-31.1c3.1-3.1 3.1-8.2 0-11.3l-56.6-56.6zM262 530h-80c-4.4 0-8 3.6-8 8v44c0 4.4 3.6 8 8 8h80c4.4 0 8-3.6 8-8v-44c0-4.4-3.6-8-8-8z">
+                                                </path>
+                                            </svg></span>
+                                        <span>Dashboard</span>
+                                    </a>
+                                </span>
+                            </li>
+                            <li class="menu__item">
+                                <span>
+                                    <a href="#" class="menu__item__icon">
+                                        <span class="ant-icon">
+                                            <svg viewBox="64 64 896 896" focusable="false" data-icon="user" width="1em"
+                                                height="1em" fill="currentColor" aria-hidden="true">
+                                                <path
+                                                    d="M858.5 763.6a374 374 0 00-80.6-119.5 375.63 375.63 0 00-119.5-80.6c-.4-.2-.8-.3-1.2-.5C719.5 518 760 444.7 760 362c0-137-111-248-248-248S264 225 264 362c0 82.7 40.5 156 102.8 201.1-.4.2-.8.3-1.2.5-44.8 18.9-85 46-119.5 80.6a375.63 375.63 0 00-80.6 119.5A371.7 371.7 0 00136 901.8a8 8 0 008 8.2h60c4.4 0 7.9-3.5 8-7.8 2-77.2 33-149.5 87.8-204.3 56.7-56.7 132-87.9 212.2-87.9s155.5 31.2 212.2 87.9C779 752.7 810 825 812 902.2c.1 4.4 3.6 7.8 8 7.8h60a8 8 0 008-8.2c-1-47.8-10.9-94.3-29.5-138.2zM512 534c-45.9 0-89.1-17.9-121.6-50.4S340 407.9 340 362c0-45.9 17.9-89.1 50.4-121.6S466.1 190 512 190s89.1 17.9 121.6 50.4S684 316.1 684 362c0 45.9-17.9 89.1-50.4 121.6S557.9 534 512 534z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                        <span>User</span>
+                                    </a>
+                                </span>
+                            </li>
+                            <li class="menu__item">
+                                <span>
+                                    <a href="#" class="menu__item__icon">
+                                        <span class="ant-icon">
+                                            <svg viewBox="0 0 1024 1024" focusable="false" data-icon="shopping-cart"
+                                                width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                                                <path
+                                                    d="M922.9 701.9H327.4l29.9-60.9 496.8-.9c16.8 0 31.2-12 34.2-28.6l68.8-385.1c1.8-10.1-.9-20.5-7.5-28.4a34.99 34.99 0 00-26.6-12.5l-632-2.1-5.4-25.4c-3.4-16.2-18-28-34.6-28H96.5a35.3 35.3 0 100 70.6h125.9L246 312.8l58.1 281.3-74.8 122.1a34.96 34.96 0 00-3 36.8c6 11.9 18.1 19.4 31.5 19.4h62.8a102.43 102.43 0 00-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7h161.1a102.43 102.43 0 00-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7H923c19.4 0 35.3-15.8 35.3-35.3a35.42 35.42 0 00-35.4-35.2zM305.7 253l575.8 1.9-56.4 315.8-452.3.8L305.7 253zm96.9 612.7c-17.4 0-31.6-14.2-31.6-31.6 0-17.4 14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 01-31.6 31.6zm325.1 0c-17.4 0-31.6-14.2-31.6-31.6 0-17.4 14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 01-31.6 31.6z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                        <span>Posts</span>
+                                    </a>
+                                </span>
+                            </li>
+                            <li class="menu__item__sub">
+                                <div class="menu__submenu">
+                                    <span>
+                                        <a href="#" class="menu__item__icon">
+                                            <span class="ant-icon">
+                                                <svg viewBox="64 64 896 896" focusable="false" data-icon="code"
+                                                    width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                                                    <path
+                                                        d="M516 673c0 4.4 3.4 8 7.5 8h185c4.1 0 7.5-3.6 7.5-8v-48c0-4.4-3.4-8-7.5-8h-185c-4.1 0-7.5 3.6-7.5 8v48zm-194.9 6.1l192-161c3.8-3.2 3.8-9.1 0-12.3l-192-160.9A7.95 7.95 0 00308 351v62.7c0 2.4 1 4.6 2.9 6.1L420.7 512l-109.8 92.2a8.1 8.1 0 00-2.9 6.1V673c0 6.8 7.9 10.5 13.1 6.1zM880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-40 728H184V184h656v656z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <span>Charts</span>
+                                        </a>
+                                    </span>
+                                    <i class="submenu-arrow"></i>
+                                </div>
+                                <ul class="menu__submenu_content hidden">
+                                    <li class="menu__item">
+                                        <span>
+                                            <a href="#" class="menu__item__icon">
+                                                <span class="ant-icon">
+                                                    <svg viewBox="64 64 896 896" focusable="false" data-icon="line"
+                                                        width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                                                        <path
+                                                            d="M904 476H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                                <span>ECharts</span>
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li class="menu__item">
+                                        <span>
+                                            <a href="#" class="menu__item__icon">
+                                                <span class="ant-icon">
+                                                    <svg viewBox="64 64 896 896" focusable="false" data-icon="bar-chart"
+                                                        width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                                                        <path
+                                                            d="M888 792H200V168c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v688c0 4.4 3.6 8 8 8h752c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm-600-80h56c4.4 0 8-3.6 8-8V560c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v144c0 4.4 3.6 8 8 8zm152 0h56c4.4 0 8-3.6 8-8V384c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v320c0 4.4 3.6 8 8 8zm152 0h56c4.4 0 8-3.6 8-8V462c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v242c0 4.4 3.6 8 8 8zm152 0h56c4.4 0 8-3.6 8-8V304c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v400c0 4.4 3.6 8 8 8z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                                <span>HightCharts</span>
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li class="menu__item">
+                                        <span>
+                                            <a href="#" class="menu__item__icon">
+                                                <span class="ant-icon">
+                                                    <svg viewBox="64 64 896 896" focusable="false"
+                                                        data-icon="area-chart" width="1em" height="1em"
+                                                        fill="currentColor" aria-hidden="true">
+                                                        <path
+                                                            d="M888 792H200V168c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v688c0 4.4 3.6 8 8 8h752c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm-616-64h536c4.4 0 8-3.6 8-8V284c0-7.2-8.7-10.7-13.7-5.7L592 488.6l-125.4-124a8.03 8.03 0 00-11.3 0l-189 189.6a7.87 7.87 0 00-2.3 5.6V720c0 4.4 3.6 8 8 8z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                                <span>ReCharts</span>
+                                            </a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu__item__sub">
+                                <div class="menu__submenu">
+                                    <span>
+                                        <a href="#" class="menu__item__icon">
+                                            <span class="ant-icon">
+                                                <svg viewBox="64 64 896 896" focusable="false" data-icon="code"
+                                                    width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                                                    <path
+                                                        d="M516 673c0 4.4 3.4 8 7.5 8h185c4.1 0 7.5-3.6 7.5-8v-48c0-4.4-3.4-8-7.5-8h-185c-4.1 0-7.5 3.6-7.5 8v48zm-194.9 6.1l192-161c3.8-3.2 3.8-9.1 0-12.3l-192-160.9A7.95 7.95 0 00308 351v62.7c0 2.4 1 4.6 2.9 6.1L420.7 512l-109.8 92.2a8.1 8.1 0 00-2.9 6.1V673c0 6.8 7.9 10.5 13.1 6.1zM880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-40 728H184V184h656v656z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <span>Charts</span>
+                                        </a>
+                                    </span>
+                                    <i class="submenu-arrow"></i>
+                                </div>
+                                <ul class="menu__submenu_content hidden">
+                                    <li class="menu__item">
+                                        <span>
+                                            <a href="#" class="menu__item__icon">
+                                                <span class="ant-icon">
+                                                    <svg viewBox="64 64 896 896" focusable="false" data-icon="line"
+                                                        width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                                                        <path
+                                                            d="M904 476H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                                <span>ECharts</span>
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li class="menu__item">
+                                        <span>
+                                            <a href="#" class="menu__item__icon">
+                                                <span class="ant-icon">
+                                                    <svg viewBox="64 64 896 896" focusable="false" data-icon="bar-chart"
+                                                        width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                                                        <path
+                                                            d="M888 792H200V168c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v688c0 4.4 3.6 8 8 8h752c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm-600-80h56c4.4 0 8-3.6 8-8V560c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v144c0 4.4 3.6 8 8 8zm152 0h56c4.4 0 8-3.6 8-8V384c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v320c0 4.4 3.6 8 8 8zm152 0h56c4.4 0 8-3.6 8-8V462c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v242c0 4.4 3.6 8 8 8zm152 0h56c4.4 0 8-3.6 8-8V304c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v400c0 4.4 3.6 8 8 8z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                                <span>HightCharts</span>
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li class="menu__item">
+                                        <span>
+                                            <a href="#" class="menu__item__icon">
+                                                <span class="ant-icon">
+                                                    <svg viewBox="64 64 896 896" focusable="false"
+                                                        data-icon="area-chart" width="1em" height="1em"
+                                                        fill="currentColor" aria-hidden="true">
+                                                        <path
+                                                            d="M888 792H200V168c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v688c0 4.4 3.6 8 8 8h752c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm-616-64h536c4.4 0 8-3.6 8-8V284c0-7.2-8.7-10.7-13.7-5.7L592 488.6l-125.4-124a8.03 8.03 0 00-11.3 0l-189 189.6a7.87 7.87 0 00-2.3 5.6V720c0 4.4 3.6 8 8 8z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                                <span>ReCharts</span>
+                                            </a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sidebar__switch-theme">
+                    <span>
+                        <span class="icon-bulb">
+                            <svg viewBox="64 64 896 896" focusable="false" data-icon="bulb" width="1em" height="1em"
+                                fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M632 888H392c-4.4 0-8 3.6-8 8v32c0 17.7 14.3 32 32 32h192c17.7 0 32-14.3 32-32v-32c0-4.4-3.6-8-8-8zM512 64c-181.1 0-328 146.9-328 328 0 121.4 66 227.4 164 284.1V792c0 17.7 14.3 32 32 32h264c17.7 0 32-14.3 32-32V676.1c98-56.7 164-162.7 164-284.1 0-181.1-146.9-328-328-328zm127.9 549.8L604 634.6V752H420V634.6l-35.9-20.8C305.4 568.3 256 484.5 256 392c0-141.4 114.6-256 256-256s256 114.6 256 256c0 92.5-49.4 176.3-128.1 221.8z">
+                                </path>
+                            </svg>
+                        </span>Switch Theme</span>
+                    <button type="button" class="switch">
+                        <div class="switch__handle"></div>
+                        <span class="switch__inner">Light</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper__container">
+            <div class="header">
+                <div class="header__button-toggle" id="btn-toggle">
+                    <span>
+                        <svg viewBox="64 64 896 896" focusable="false" data-icon="menu-fold" width="1em" height="1em"
+                            fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 000 13.8z">
+                            </path>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/app.js"></script>
+</body>
+
+</html>
