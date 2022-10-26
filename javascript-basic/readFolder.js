@@ -39,9 +39,3 @@ const readFolderFor = (path, sum) => {
 };
 
 console.log("Loop folder with for: " + readFolderFor(folderPath));
-
-function delay(time) {
-  console.log("Delay 1s");
-  let startTime = Date.now();
-  while (Date.now() - startTime < time) {}
-}
