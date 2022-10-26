@@ -1,3 +1,7 @@
+1. [logger](/javascript-basic/logger.js)
+2. [readFolder](/javascript-basic/readFolder.js)
+   [readFolderDelay1Second](/javascript-basic/worker/readFile.js)
+3. [antd sidebar](/antd-sidebar/)
 4. Phân biệt let, var, const trong javascript:
 
 - var: globally scoped (trừ trường hợp được khai báo trong function, khi đó là function/locally scoped),
