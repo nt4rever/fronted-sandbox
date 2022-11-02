@@ -1,4 +1,5 @@
 Ref: https://viblo.asia/p/react-js-hieu-ve-functional-va-class-components-Qbq5QpkRlD8
+https://www.geeksforgeeks.org/differences-between-functional-components-and-class-components-in-react/
 
 # Functional Components vs Class Components:
 
