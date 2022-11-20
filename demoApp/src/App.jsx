@@ -1,10 +1,13 @@
 import Memo from "./Memo";
 import "./App.css";
+import { AppProvider } from "./contexts/appContext";
 
 function App() {
   return (
     <div className="container">
-      <Memo />
+      <AppProvider>
+        <Memo />
+      </AppProvider>
     </div>
   );
 }

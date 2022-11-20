@@ -1,6 +1,9 @@
-import React, { useMemo, useState } from "react";
+import React, { useContext, useMemo, useState } from "react";
+import { AppContext } from "./contexts/appContext";
 
 const Memo = () => {
+  const { open } = useContext(AppContext);
+  console.log(open);
   const [count, setCount] = useState(0);
 
   const getArray = useMemo(() => {
