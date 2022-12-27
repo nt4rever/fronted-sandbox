@@ -937,6 +937,19 @@
           </li>
         </ol>
       </div>
+      <div class="chapter">
+        <div
+          id="exercise"
+          style="
+            height: calc(100vh - 100px);
+            border: 1rem solid rgba(0, 0, 0, 0.1);
+          "
+        ></div>
+      </div>
     </div>
+    <script src="./pdfobject.js"></script>
+    <script>
+      PDFObject.embed("./giai_bai_tap.pdf", "#exercise");
+    </script>
   </body>
 </html>
