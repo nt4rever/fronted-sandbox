@@ -99,23 +99,6 @@
                 <b>&#x2013;</b> <b>VBQ</b>PPL <b>c</b>&#xF3; <b>gi</b>&#xE1;
                 <b>tr</b>&#x1ECB; <b>ph</b>&#xE1;p <b>l</b>&#xFD; <b>ca</b>o
                 <b>sa</b>u <b>hi</b>&#x1EBF;n <b>ph&#xE1;</b>p.<br /><b></b>
-
-                <b>H</b>&#x1EC7; <b>th&#x1ED1;</b>ng <b>h&#xF3;</b>a
-                <b>ph</b>&#xE1;p <b>lu</b>&#x1EAD;t <b>l</b>&#xE0;
-                <b>ho</b>&#x1EA1;t <b>&#x111;&#x1ED9;</b>ng <b>nh</b>&#x1EB1;m
-                <b>s&#x1EAF;</b>p <b>x&#x1EBF;</b>p, <b>ho</b>&#xE0;n
-                <b>thi</b>&#x1EC7;n <b>c&#xE1;</b>c <b>qu</b>y
-                <b>ph</b>&#x1EA1;m <b>ph</b>&#xE1;p <b>lu&#x1EAD;</b>t,
-                <b>v&#x103;</b>n <b>b&#x1EA3;</b>n <b>ph</b>&#xE1;p
-                <b>lu&#x1EAD;</b>t, <b>ch</b>&#x1EA5;n <b>ch&#x1EC9;</b>nh
-                <b>th&#xE0;</b>nh <b>h</b>&#x1EC7; <b>th&#x1ED1;</b>ng
-                <b>c</b>&#xF3; <b>s</b>&#x1EF1; <b>th&#x1ED1;</b>ng
-                <b>nh</b>&#x1EA5;t <b>n&#x1ED9;</b>i <b>t&#x1EA1;</b>i
-                <b>th</b>eo <b>m&#x1ED9;</b>t <b>tr&#xEC;</b>nh <b>t</b>&#x1EF1;
-                <b>nh</b>&#x1EA5;t <b>&#x111;&#x1ECB;n</b>h. <b>(c</b>&#xF3;
-                <b>2</b> <b>d&#x1EA1;n</b>g: <b>t&#x1EAD;</b>p <b>h&#x1EE3;</b>p
-                <b>h&#xF3;</b>a <b>v</b>&#xE0; <b>ph</b>&#xE1;p
-                <b>&#x111;i</b>&#x1EC3;n <b>h&#xF3;a</b>).
               </div>
             </div>
           </li>
@@ -504,6 +487,19 @@
           </li>
         </ol>
       </div>
+      <div class="chapter">
+        <div
+          id="exercise"
+          style="
+            height: calc(100vh - 100px);
+            border: 1rem solid rgba(0, 0, 0, 0.1);
+          "
+        ></div>
+      </div>
     </div>
+    <script src="./pdfobject.js"></script>
+    <script>
+      PDFObject.embed("./bai_tap.pdf", "#exercise");
+    </script>
   </body>
 </html>
