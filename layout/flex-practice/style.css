@@ -1,0 +1,35 @@
+body {
+  background: #000;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  margin: 50px;
+  border: 2px dashed #fff;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  font-size: 50px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-1 {
+  flex-basis: min(400px, 100%);
+  background: #f2921d;
+}
+
+.item-2 {
+  background: #4ae7c0;
+}
+
+.item-3 {
+  background: #e74a93;
+}

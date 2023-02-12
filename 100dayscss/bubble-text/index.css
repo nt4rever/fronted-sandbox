@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+  transition: all 0.35s;
+}
+
+body {
+  background: #010104;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 90px;
+  color: #b3b3fe;
+  cursor: default;
+  font-weight: 400;
+}
+
+.hovered {
+  color: #fbfbfb;
+  font-weight: 400;
+}
+
+.hovered-adjacent {
+  color: #ccccfa;
+  font-weight: 400;
+}
