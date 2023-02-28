@@ -19,10 +19,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 1;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.item:hover {
+  flex: 2;
 }
 
 .item-1 {
-  flex-basis: min(400px, 100%);
   background: #f2921d;
 }
 
