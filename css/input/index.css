@@ -1,0 +1,44 @@
+body {
+  background: #1b1b1b;
+}
+
+.container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.item input {
+  padding: 10px 15px;
+  font-size: 18px;
+  border: 2px solid darkcyan;
+  background: transparent;
+  color: #fff;
+  outline: none;
+  border-radius: 20px;
+}
+
+@keyframes blink {
+  from,
+  to {
+    text-decoration-color: #fff;
+    text-decoration-line: none;
+  }
+
+  50% {
+    text-decoration-color: antiquewhite;
+    text-decoration-line: under-line;
+  }
+}
+
+.item input::-webkit-input-placeholder {
+  text-decoration-line: underline;
+  text-decoration-color: darkcyan;
+  text-decoration-thickness: 2px;
+  animation: blink 2s step-end infinite;
+  caret-color: transparent;
+}
+
+.item input:invalid {
+  border-color: bisque;
+}

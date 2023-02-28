@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.head {
+  position: absolute;
+  left: 200px;
+  top: 50px;
+  transform: translate(-50%);
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  animation: head-shake 2s linear infinite alternate;
+  transform-origin: 0% 0%;
+}
+.head .circle-center {
+  width: 80px;
+  height: 80px;
+  background: #ffb84c;
+  border-radius: 40px;
+  position: relative;
+  z-index: 2;
+}
+.head .circle-center .eye {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 5px;
+  background: #2e3840;
+  top: 35%;
+  animation: eye-blink 1s infinite;
+}
+.head .circle-center .eye:nth-child(1) {
+  left: 30%;
+}
+.head .circle-center .eye:nth-child(2) {
+  right: 30%;
+}
+@keyframes eye-blink {
+  0%, 100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.8);
+  }
+}
+.head .circle-center .mouth {
+  position: absolute;
+  width: 24px;
+  height: 13px;
+  background: #fff;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  bottom: 25%;
+  left: calc(50% - 12px);
+}
+.head .wings {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  animation: spin 8s linear infinite;
+}
+.head .wings .wing {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: #fdd36a;
+  border-radius: 40px;
+}
+.head .wings .wing:nth-child(1) {
+  top: -2px;
+  left: calc(50% - 40px);
+}
+.head .wings .wing:nth-child(2) {
+  top: 20px;
+  left: 0px;
+}
+.head .wings .wing:nth-child(3) {
+  top: 20px;
+  right: 0;
+}
+.head .wings .wing:nth-child(4) {
+  bottom: 7px;
+  left: 12px;
+}
+.head .wings .wing:nth-child(5) {
+  bottom: 7px;
+  right: 12px;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes head-shake {
+  0% {
+    transform: translateX(calc(-50% - 15px));
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(calc(-50% + 15px));
+  }
+}
+
+.root {
+  position: absolute;
+  width: 50px;
+  height: 100px;
+  left: 50%;
+  top: 180px;
+  transform: translate(-50%);
+  z-index: 1;
+  animation: root-shake 2s infinite alternate;
+  transform-origin: 50% 100%;
+}
+.root .main {
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  background: #9dc08b;
+  left: calc(50% - 6px);
+  transform: rotate(3deg);
+}
+.root div[class^=leaf] {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 15px;
+  background: #9dc08b;
+}
+.root div[class^=leaf].leaf-1 {
+  left: -20px;
+  transform: rotate(45deg);
+  border-top-left-radius: 60%;
+  border-bottom-left-radius: 80%;
+}
+.root div[class^=leaf].leaf-2 {
+  right: -20px;
+  width: 60px;
+  transform: rotate(-45deg);
+  border-top-right-radius: 60%;
+  border-bottom-right-radius: 80%;
+}
+@keyframes root-shake {
+  0% {
+    transform: translate(-50%) rotate(-3deg);
+  }
+  50% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%) rotate(3deg);
+  }
+}
+
+.pot {
+  position: absolute;
+  width: 110px;
+  height: 90px;
+  top: 275px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 2;
+}
+.pot .rim {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  background: #b99b6b;
+  box-shadow: 0 2px 2px -2px #b9a789;
+  z-index: 1;
+}
+.pot .body {
+  position: absolute;
+  height: 100%;
+  width: 90px;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 0;
+}
+.pot .body:after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  transform: skew(10deg);
+  background: #b99b6b;
+  left: 0;
+}
+.pot .body:before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  right: 0;
+  transform: skew(-10deg);
+  background: #b99b6b;
+}
+
+/*# sourceMappingURL=index.css.map */

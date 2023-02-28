@@ -1,0 +1,35 @@
+:root {
+  --color-1: #dedede;
+  --color-2: #0000000c;
+  --color-3: #00000019;
+  --color-4: #ffffffe5;
+}
+
+body {
+  background: var(--color-1);
+}
+
+.water {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: transparent;
+  top: 90px;
+  left: 50px;
+  border-radius: 47% 53% 65% 35% / 30% 41% 59% 70%;
+  box-shadow: inset 10px 10px 10px var(--color-2), 15px 25px 10px var(--color-3),
+    inset -10px -10px 25px var(--color-4);
+}
+
+.water::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-radius: 56% 44% 45% 55% / 42% 41% 59% 58%;
+  box-shadow: inset 10px 10px 6px var(--color-2), 6px 6px 10px var(--color-3),
+    inset -10px -10px 25px var(--color-4);
+}
