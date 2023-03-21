@@ -9,7 +9,7 @@ const AppLayout = ({ children }: AppLayoutProps) => {
   return (
     <div>
       <Navbar />
-      <div className="pt-4 px-[10%]">{children} </div>
+      <div className="pt-4 px-[2%]">{children} </div>
     </div>
   );
 };

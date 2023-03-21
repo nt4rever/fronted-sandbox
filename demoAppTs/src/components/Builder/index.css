@@ -1,0 +1,16 @@
+.gjs-pn-panels {
+  display: none !important;
+}
+
+.gjs-cv-canvas {
+  width: 100% !important;
+  height: 100% !important;
+  top: 0 !important;
+}
+
+.gjs-cv-canvas {
+  background-color: #fff;
+}
+
+.gjs-frame {
+}
